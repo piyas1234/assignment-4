@@ -29,17 +29,15 @@ function ticketsPrice(ticketInput, ticketPrice, eventClass) {
                 subTotal[0].innerText = subtotalPrice;
                 vat[0].innerText = totalVat;
                 total[0].innerText = totalPrice;
-                 
             }
              
         });
-        return ticket;
     }
 
 }
-const result = ticketsPrice(ticketInput[0], 150, [increment[0], decrement[0]]);
-ticketsPrice(ticketInput[1], 120, [increment[1], decrement[1]]);
-console.log(result);
+ticketsPrice(ticketInput[0], 150, [increment[0], decrement[0]]);
+ticketsPrice(ticketInput[1], 100, [increment[1], decrement[1]]);
+
 submit[0].addEventListener('click', (e) => {
     e.preventDefault();
     var msg = "";
