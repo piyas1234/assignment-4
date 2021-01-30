@@ -30,10 +30,8 @@ function ticketsPrice(ticketInput, ticketPrice, eventClass) {
                 vat[0].innerText = totalVat;
                 total[0].innerText = totalPrice;
             }
-             
         });
     }
-
 }
 ticketsPrice(ticketInput[0], 150, [increment[0], decrement[0]]);
 ticketsPrice(ticketInput[1], 100, [increment[1], decrement[1]]);

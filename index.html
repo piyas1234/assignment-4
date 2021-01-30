@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Booking</title>
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
@@ -53,12 +57,7 @@
                     <small class="errorMsg"></small>
                 </div>
             </div>
-
-
-            <!-- ///////////////////////////// -->
-            <!-- ///////////////////////////// -->
-            <!-- ///////////////////////////// -->
-            <!-- ///////////////////////////// -->
+ 
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
@@ -66,8 +65,8 @@
                     <small class="errorMsg"></small>
                 </div>
                 <div class="plus-minus-btn">
-                    <button class="increment" type="submit">+</button>
-                    <button class="decrement" type="submit">-</button>
+                    <button class="increment btn-sm btn-success" type="submit">+</button>
+                    <button class="decrement btn-sm btn-warning " type="submit">-</button>
                 </div>
             </div>
             
@@ -78,8 +77,8 @@
                     <small class="errorMsg"></small>
                 </div>
                 <div class="plus-minus-btn">
-                    <button class="increment" type="submit">+</button>
-                    <button class="decrement" type="submit">-</button>
+                    <button class="increment btn-sm btn-success" type="submit">+</button>
+                    <button class="decrement btn-sm btn-warning" type="submit">-</button>
                 </div>
             </div>
             <div class="calculations">
@@ -115,17 +114,23 @@
 
   
     </main>
-    <div class="booked-form">
-        <h1>booked Form</h1>
-        <h3>Flying From <span class="inputResult"></span></h3>
-        <h3>Flying to <span class="inputResult"></span></h3>
-        <h3>Departure <span class="inputResult"></span></h3>
-        <h3>Return <span class="inputResult"></span></h3>
-        <h3>First Class Ticket: <span class="inputResult"></span></h3>
-        <h3>Economy Class Ticket: <span class="inputResult"></span></h3>
-        <h4>Subtotal: <span class="inputResult"></span></h4>
-        <h4>Charge 10% VAT: <span class="inputResult"></span></h4>
-        <h4>Total <span class="inputResult"></span></h4>
+    <div class="booked-form card shadow bordered">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>flight booked Successfully!!</strong>  
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <h1 class="bg-success bordered-25">booked tickets</h1>
+        <h4>Flying From <span class="inputResult text-warning"></span></h4>
+        <h4>Flying to <span class="inputResult text-warning"></span></h4>
+        <h4>Departure: <span class="inputResult text-success"></span></h4>
+        <h4>Return: <span class="inputResult text-success"></span></h4>
+        <h4>First Class Ticket: <span class="inputResult text-success"></span></h4>
+        <h4>Economy Class Ticket: <span class="inputResult text-success"></span></h4>
+        <h5>Subtotal: <span class="inputResult text-danger"></span></h5>
+        <h5>Charge 10% VAT: <span class="inputResult text-danger"></span></h5>
+        <h5>Total <span class="inputResult text-danger"></span></h5>
 
     </div>
         <div class="booking-content">
@@ -139,3 +144,6 @@
 </body>
 
 </html>
+
+
+ 
